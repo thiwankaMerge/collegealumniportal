@@ -19,6 +19,7 @@ const addTask = async (req, res) => {
     }
 };
 
+
 const updateTask = async (req, res) => {
     const { title, description, completed, deadline } = req.body;
     try {
@@ -36,6 +37,7 @@ const updateTask = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
 
 const deleteTask = async (req, res) => {
     try {
