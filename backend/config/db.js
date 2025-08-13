@@ -1,5 +1,6 @@
 // config/db.js
 const mongoose = require("mongoose");
+mongoose.set('strictQuery', false); // or true, depending on your need
 
 // Set strictQuery explicitly to suppress the warning
 //mongoose.set('strictQuery', true);
