@@ -1,5 +1,7 @@
 const Task = require('../models/Task');
 
+// This controller handles task-related operations such as getting, adding, updating, and deleting tasks.
+// It assumes that the user is authenticated and their ID is available in req.user.id.
 const getTasks = async (req, res) => {
     try {
         const tasks = await Task.find({ userId: req.user.id });
@@ -9,6 +11,8 @@ const getTasks = async (req, res) => {
     }
 };
 
+// This function adds a new task to the database.
+// It requires the user to be authenticated, and the task details are provided in the request body
 const addTask = async (req, res) => {
     const { title, description, deadline } = req.body;
     try {
@@ -19,7 +23,8 @@ const addTask = async (req, res) => {
     }
 };
 
-
+// This function updates a task based on the provided ID and request body.
+// It allows partial updates to the task fields.
 const updateTask = async (req, res) => {
     const { title, description, completed, deadline } = req.body;
     try {
@@ -38,7 +43,8 @@ const updateTask = async (req, res) => {
     }
 };
 
-
+// This function deletes a task based on the provided ID.
+// It checks if the task exists before attempting to delete it.
 const deleteTask = async (req, res) => {
     try {
         const task = await Task.findById(req.params.id);
