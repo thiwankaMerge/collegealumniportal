@@ -1,5 +1,7 @@
 Assignment: Software requirements analysis and design (Full-Stack CRUD Application Development with DevOps Practices)
 
+Public URL for project: https://13.236.116.48/
+
 Objective
 You have been provided with a starter project that includes user authentication using Node.js, React.js, and MongoDB. Your task is to extend this application by implementing CRUD (Create, Read, Update, Delete) operations of different features for a real-world application of your choice, while following industry best practices such as:
 • Project Management with JIRA
