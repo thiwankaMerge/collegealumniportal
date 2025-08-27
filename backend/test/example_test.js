@@ -15,9 +15,9 @@ let server;
 let port;
 
 
-describe('AddTask Function Test', () => {
+describe('CreateJob Function Test', () => {
 
-  it('should create a new task successfully', async () => {
+  it('should create a new job successfully', async () => {
     // Mock request data
     const req = {
       user: { id: new mongoose.Types.ObjectId() },
@@ -78,9 +78,9 @@ describe('AddTask Function Test', () => {
 });
 
 
-describe('Update Function Test', () => {
+describe('ViewJob Function Test', () => {
 
-  it('should update task successfully', async () => {
+  it('should view job successfully', async () => {
     // Mock task data
     const taskId = new mongoose.Types.ObjectId();
     const existingTask = {
@@ -159,9 +159,9 @@ describe('Update Function Test', () => {
 
 
 
-describe('GetTask Function Test', () => {
+describe('UpdateJob Function Test', () => {
 
-  it('should return tasks for the given user', async () => {
+  it('should update jobs', async () => {
     // Mock user ID
     const userId = new mongoose.Types.ObjectId();
 
@@ -219,9 +219,9 @@ describe('GetTask Function Test', () => {
 
 
 
-describe('DeleteTask Function Test', () => {
+describe('DeleteJob Function Test', () => {
 
-  it('should delete a task successfully', async () => {
+  it('should delete a job successfully', async () => {
     // Mock request data
     const req = { params: { id: new mongoose.Types.ObjectId().toString() } };
 

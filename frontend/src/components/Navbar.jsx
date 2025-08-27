@@ -41,7 +41,7 @@ const Navbar = () => {
     //   </div>
     // </nav>
     <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
-  <Link to="/" className="text-2xl font-bold">Task Manager</Link>
+  <Link to="/" className="text-2xl font-bold">College Alumni Portal</Link>
   
   <div className="flex items-center space-x-4">
     {user ? (

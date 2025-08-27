@@ -62,7 +62,7 @@ const Landing = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center px-4 text-center">
       <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-6">
-        Welcome to Task Manager
+        Welcome to College Alumni Portal
       </h1>
       <p className="text-lg text-gray-700 mb-8 max-w-xl">
         Organize your life by managing tasks, job applications, and events — all in one place.
